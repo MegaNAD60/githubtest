@@ -1,0 +1,137 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<style>
+body{
+background-color:black;
+}
+.form-body{
+    width:70%;
+    margin: auto;
+}
+.joba{
+    border-style:double;
+    border-color: #fff;
+    padding:20px;
+	margin-top:30px;
+	margin-bottom:20px;
+    border-style:hidden;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.89);
+} 
+.lab{margin-top:20px;
+}
+#apply{
+color:white; 
+margin-top:40px;
+}
+#nal{
+font-size:25px;
+} 
+ #eml{
+font-size:25px;
+} 
+#mel{
+font-size:25px;
+}
+#cvl{
+font-size:25px;
+}
+#btn1{
+margin-left:20px;
+border-radius:5px;
+height:40px;
+color:white;
+border:0px none #7495a3;
+background-color:blue;
+}
+#na{
+width:90%;
+border-radius:5px;
+height:40px;
+border:ridge;
+}
+#em{
+width:90%;
+border-radius:5px;
+height:40px;
+border:ridge;
+} 
+#txa{
+width:90%;
+border-radius:5px;
+border:ridge;
+} 
+#btn2{
+width:100px;
+height:40px;
+color:white;
+border:0px none #7495a3;
+background-color:grey;
+}
+h4{
+margin-left:110px;
+margin-top:-30px;
+}
+</style>
+</head>
+<body>
+<div class="form-body">
+<h1 id="apply">Apply for job</h1>
+<div class="joba">
+<form name="myform">
+
+	<!--Name row-->
+	<div class="row">
+		<div class="col-md-4">
+			<label id="nal">Full name</label>
+		</div>
+		<div class="col-md-8">
+			<input type="name" id="na"></input>
+		</div>
+	</div><br/>
+	<!--End of name row-->
+
+	<!--Email row-->
+	<div class="row">
+		<div class="col-md-4">
+			<label id="eml">Email address</label>
+		</div>
+		<div class="col-md-8">
+			<input type="email" id="em" placeholder="example@email.com"></input>
+		</div>
+	</div><br/>	
+	<!--End of email row-->
+
+	<!--Message row-->
+	<div class="row">
+		<div class="col-md-4">
+			<label id="mel">Message</label>
+		</div>
+		<div class="col-md-8">
+			<textarea type="textarea" rows="6px" id="txa" placeholder="Message sent to the employer"></textarea>
+		</div>
+	</div><br/>
+	<!--End of message row-->
+
+	<!--Upload cv row-->
+	<div class="row">
+		<div class="col-md-4">
+			<label id="cvl">Upload CV</label>
+		</div>
+		<div class="col-md-8">
+			<button type="button" id="btn2">Choose file</button>
+			<h4>No file chosen</h4>
+			<h5>Upload your CV/Resume or any other relevant file. Max file size 50 MB</h5>
+		</div>
+	</div>
+	<!--End of upload cv row-->
+
+<button id="btn1" type="button">Send Application</button>
+</form>
+</div>
+</div>
+</body>
+</html>
